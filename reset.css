@@ -1,0 +1,24 @@
+body {
+  margin: 0;
+}
+
+#wrap {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-content: flex-start;
+  width: 90%;
+  height: 100rem;
+  margin: 0 5%;
+}
+#wrap div {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-content: flex-start;
+  width: 100%;
+}
+#wrap div img {
+  width: 10%;
+  height: 9rem;
+}/*# sourceMappingURL=reset.css.map */

@@ -1,0 +1,36 @@
+@charset "utf-8";
+
+@mixin width-height($width, $height){
+    width: $width;
+    height: $height;
+}
+
+@mixin pad-margin($padding, $margin){
+    padding: $padding;
+    margin: $margin;
+}
+
+@mixin display($justify, $align){
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: $justify;
+    align-content: $align;
+}
+
+body{
+    margin: 0;
+}
+
+#wrap {
+    @include display(flex-start, flex-start);
+    @include width-height(90%, 100rem);
+    margin: 0 5%;
+
+    div {
+        @include display(flex-start, flex-start);
+        width: 100%;
+        img {
+            @include width-height(10%, 9rem);
+        }
+    }
+}
